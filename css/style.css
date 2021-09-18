@@ -1,0 +1,138 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+ */
+
+body {
+  max-width: 960px;
+  margin: auto;
+}
+header {
+  display: flex;
+  margin: 110px 0 96px 0;
+}
+header h1 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47.7px;
+  letter-spacing: -3px;
+  min-width: 278px;
+  width: 493px;
+  height: 47px;
+}
+
+header h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  width: 439px;
+  height: 87px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 115px;
+}
+
+.card {
+  position: relative;
+  height: 515px;
+  min-width: 264px;
+}
+.card:nth-child(3n + 2) img,
+.card:nth-child(3n + 2) p {
+  margin-top: 100px;
+}
+img {
+  height: 341px;
+  width: 238px;
+  margin-bottom: 15px;
+}
+
+main h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+}
+
+main p {
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+  line-height: 27px;
+  position: absolute;
+  writing-mode: vertical-rl;
+  top: 0px;
+  right: 0px;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #bdbdbd;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    margin: 0 0 0 20px;
+  }
+  header {
+    flex-direction: column;
+    margin: 71px 0 38px 0;
+  }
+  header h1 {
+    width: auto;
+  }
+  header p {
+    width: auto;
+  }
+  main {
+    justify-content: space-around;
+    margin: 0 0 50px 0;
+  }
+  .card {
+    height: 285px;
+    min-width: 156px;
+  }
+  .card:nth-child(3n + 2) img,
+  .card:nth-child(3n + 2) p {
+    margin-top: 0px;
+  }
+  .card:nth-child(2n) img,
+  .card:nth-child(2n) p {
+    margin-top: 30px;
+  }
+  img {
+    width: 138.72px;
+    height: 209px;
+    margin: 0 0 10px 0;
+  }
+  main h2 {
+    font-size: 14px;
+  }
+  main p {
+    font-size: 11px;
+    right: -6px;
+  }
+}
